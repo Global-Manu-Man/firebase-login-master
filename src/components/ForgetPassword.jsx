@@ -22,7 +22,7 @@ const ForgetPassword = () => {
           })
           .catch((error) => {
               console.error("Error sending password reset email:", error);
-              setError('Error sending password reset email, try again')
+              setError('Error sending password reset email, try again.')
           });
       };
 
