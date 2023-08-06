@@ -36,3 +36,7 @@ body {
 #recaptcha-container {
   margin: 20px;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
