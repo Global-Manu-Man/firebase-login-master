@@ -7,6 +7,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   RecaptchaVerifier,
+  sendPasswordResetEmail
 
 } from "firebase/auth";
 import { auth } from "../firebase";
@@ -28,6 +29,10 @@ export function UserAuthContextProvider({ children }) {
   function googleSignIn() {
     const googleAuthProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleAuthProvider);
+  }
+
+  function resetPassword(email) {
+    return sendPasswordResetEmail(auth, email);
   }
 
   function setUpRecaptha(number) {
@@ -59,6 +64,7 @@ export function UserAuthContextProvider({ children }) {
         signUp,
         logOut,
         googleSignIn,
+        resetPassword,
         setUpRecaptha,
       }}
     >
