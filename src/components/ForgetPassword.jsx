@@ -19,10 +19,12 @@ const ForgetPassword = () => {
           .then(() => {
               console.log("Password reset email sent.");
               setSendInfo('Password reset email sent.');
+              setEmail('');
           })
           .catch((error) => {
               console.error("Error sending password reset email:", error);
-              setError('Error sending password reset email, try again.')
+              setError('Error sending password reset email, try again.');
+              setEmail('');
           });
       };
 
