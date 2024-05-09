@@ -44,5 +44,7 @@ Successful Authentication: Once authenticated, you will be redirected back to th
 ## Conclusion:
 With Firebase Authentication set up and integrated into your application, you can easily add user login functionality, protect specific routes or content, and personalize user experiences based on their authentication status. Always ensure you handle authentication securely, and refer to the official Firebase documentation for detailed information on additional features and best practices.
 
+# Web page demo
 
+![DEMO](https://locallity-logos.s3.us-west-1.amazonaws.com/logeo.png)
 
